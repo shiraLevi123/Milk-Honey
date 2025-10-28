@@ -10,6 +10,7 @@ export default function HomePage() {
   const addToWishlist = useCartStore((state) => state.addToWishlist);
   const cart = useCartStore((state) => state.cart);
   const wishlist = useCartStore((state) => state.wishlist);
+  
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?limit=10")
       .then((res) => res.json())
