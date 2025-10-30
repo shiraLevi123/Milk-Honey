@@ -1,43 +1,62 @@
 .header {
+  position: fixed;        /* נשאר קבוע במסך */
+  top: 0;                 /* למעלה */
+  left: 0;                /* מתחיל מהקצה השמאלי */
+  width: 100%;            /* רוחב מלא */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fffbea;
+  background-color: #ffffff;
   padding: 10px 30px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;          /* מעל כל התוכן */
+}
+
+/* מוסיפים קצת מרווח לתוכן שמתחת כדי שלא יתחבא מתחת ל־header */
+.mainContent {
+  margin-top: 80px; /* גובה של ה-header */
 }
 
 .logo {
   font-size: 1.4rem;
-  font-weight: bold;
-  color: #5c3d00;
 }
 
 .nav {
   display: flex;
   align-items: center;
   flex: 1;
-  justify-content: space-between; /* מרכז + ימין */
+  justify-content: space-between; 
 }
 
 .centerLinks {
   display: flex;
   gap: 20px;
-  margin: 0 auto; /* ממרכז את הקישורים */
+  margin: 0 auto;
+  margin-left: 20% !important;
 }
 
 .rightLinks {
   display: flex;
   gap: 15px;
-  margin-left: auto; /* דוחף לימין */
+  margin-left: auto;
 }
 
 .nav a {
   text-decoration: none;
-  color: #5c3d00;
-  font-weight: 500;
+  color: #000000;
+  font-weight: bold !important;
+  
 }
 
 .nav a:hover {
   color: #d4a017;
+}
+.homeLink {
+  color: rgb(255, 223, 81) !important;
+  font-weight: bold !important;
+}
+
+.homeLink:hover {
+  color: #d4a017 !important;
+
 }

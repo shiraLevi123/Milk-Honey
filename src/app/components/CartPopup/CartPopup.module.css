@@ -1,0 +1,72 @@
+.popup {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.cartListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: block;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.itemTotal {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 3px;
+  display: block;
+}
+
+.total {
+  margin-top: 10px;
+  font-weight: bold;
+}

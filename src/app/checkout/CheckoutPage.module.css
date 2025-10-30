@@ -1,0 +1,125 @@
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cartGrid {
+    display: flex;
+flex-direction: column;
+
+    gap: 20px;
+  }
+  
+  .cartItem {
+    display: flex;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .cartItem:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+  }
+  
+  .quantityControls button {
+    padding: 4px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s ease;
+  }
+  
+  .quantityControls button:hover {
+    background-color: #ccc;
+  }
+
+  .removeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* פינה ימנית עליונה */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #f44336;
+    font-size: 1.5rem;
+  }
+  
+  
+  .removeButton:hover {
+    transform: scale(1.1);
+  }
+  
+  .summary {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .completeButton {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 41px;
+    width: 154px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .successMessage {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* רספונסיביות */
+  @media (max-width: 600px) {
+    .cartGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .container h2 {
+    font-family: Arial, sans-serif;
+    font-size: 3rem; 
+    font-weight: 900; 
+    text-align: center;
+    letter-spacing: -2px; 
+    margin-bottom: 30px;
+  }
+  .container h2 > span {
+    color: #ffa500; 
+    margin-left: 10px; 
+  }
