@@ -39,15 +39,9 @@ export default function HomePage() {
           paddingLeft: "150px",
           paddingRight: "150px",
         }}
-      >
+        >
         {products.map((p) => (
-          <ProductCard
-            key={p.id}
-            product={p}
-            onAddToCart={() => addToCart(p)}
-            onAddToWishlist={() => addToWishlist(p)}
-          />
-
+          <ProductCard key={p.id} product={p} />
         ))}
       </div>
     </div>

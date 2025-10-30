@@ -42,11 +42,9 @@ export default function Header() {
         <div className={styles.rightLinks}>
           <Link href="/wishlist">Wishlist ({wishlist.length})</Link>
 
-          {/* כאן נשאיר את הקישור לעגלה */}
           <div className={styles.cartWrapper}>
             <Link href="/checkout">Cart ({cart.length})</Link>
 
-            {/* הפופאפ עצמו */}
             {showPopup && <CartPopup onClose={() => setShowPopup(false)} />}
           </div>
         </div>

@@ -1,11 +1,9 @@
 "use client";
 import { useCartStore } from "../store/cartStore";
-import ProductCard from "../components/ProductCard/ProductCard";
 import { Product } from "../types/Product";
 import styles from "./CheckoutPage.module.css";
 import { MdDelete } from "react-icons/md";
 import { useState } from "react";
-import Image from "next/image";
 export default function CheckoutPage() {
   const cart = useCartStore((state) => state.cart);
   const removeFromCart = useCartStore((state) => state.removeFromCart);
@@ -35,11 +33,8 @@ export default function CheckoutPage() {
   ).toFixed(2);
 
   const handleCompleteOrder = () => {
-    // רוקן את הסל
     useCartStore.setState({ cart: [] });
-    // הצג הודעה
     setOrderComplete(true);
-    // הסתר את ההודעה אחרי 3 שניות
     setTimeout(() => setOrderComplete(false), 3000);
   };
   return (

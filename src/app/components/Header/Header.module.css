@@ -1,20 +1,19 @@
 .header {
-  position: fixed;        /* נשאר קבוע במסך */
-  top: 0;                 /* למעלה */
-  left: 0;                /* מתחיל מהקצה השמאלי */
-  width: 100%;            /* רוחב מלא */
+  position: fixed;        
+  top: 0;                 
+  left: 0;                
+  width: 100%;            
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
   padding: 10px 30px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;          /* מעל כל התוכן */
+  z-index: 1000;          
 }
 
-/* מוסיפים קצת מרווח לתוכן שמתחת כדי שלא יתחבא מתחת ל־header */
 .mainContent {
-  margin-top: 80px; /* גובה של ה-header */
+  margin-top: 80px; 
 }
 
 .logo {

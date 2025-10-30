@@ -2,12 +2,9 @@
 import styles from "./ProductCard.module.css";
 import { Product } from "../../types/Product";
 import { useCartStore } from "../../store/cartStore";
-import { MdOutlineShoppingCart } from "react-icons/md";
 
 interface ProductCardProps {
   product: Product;
-  onAddToCart?: (product: Product) => void;
-  onAddToWishlist?: (product: Product) => void;
   showButtons?: boolean;
 }
 
@@ -37,11 +34,10 @@ export default function ProductCard({ product, showButtons = true }: ProductCard
       {showButtons && (
         <div className={styles.buttons}>
           <button className={styles.addToCartButton} onClick={() => addToCart(product)}>
-            <MdOutlineShoppingCart size={20} />
-            Add to Cart
+            🛒 Add to Cart
           </button>
-          <button onClick={toggleWishlist} className={isInWishlist ? styles.activeWishlist : ""}>
-            ❤️
+          <button onClick={toggleWishlist} className={styles.wishlistButton}>
+            {isInWishlist ? "❤️" : "🤍"}
           </button>
         </div>
       )}

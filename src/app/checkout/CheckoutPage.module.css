@@ -67,7 +67,7 @@ flex-direction: column;
   .removeButton {
     position: absolute;
     top: 10px;
-    right: 10px; /* פינה ימנית עליונה */
+    right: 10px; 
     background: transparent;
     border: none;
     cursor: pointer;
@@ -105,7 +105,6 @@ flex-direction: column;
     margin-bottom: 15px;
   }
   
-  /* רספונסיביות */
   @media (max-width: 600px) {
     .cartGrid {
       grid-template-columns: 1fr;

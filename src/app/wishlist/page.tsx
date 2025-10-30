@@ -7,6 +7,7 @@ import { MdDelete } from "react-icons/md";
 export default function WishlistPage() {
   const wishlist = useCartStore((state) => state.wishlist);
   const removeFromWishlist = useCartStore((state) => state.removeFromWishlist);
+  const isInWishlist = (id: number) => wishlist.some((p) => p.id === id);
 
   return (
     <div className={styles.container}>

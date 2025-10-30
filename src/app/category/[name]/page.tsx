@@ -20,7 +20,6 @@ export default function CategoryPage() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Category: {categoryName}</h1>
       <div className={styles.productsGrid}>
         {products.map((product) => (
           <ProductCard
